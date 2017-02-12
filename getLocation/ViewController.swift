@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let loc = GetLocation()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        loc.getAdress { result in
+            
+            if let city = result["City"] as? String {
+                print(city)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
