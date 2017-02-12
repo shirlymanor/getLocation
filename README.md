@@ -54,7 +54,7 @@ loc.getAdress { result in
             }
         }
  ```
- #####Challange
+ ##### challenge <br>
  Only on the second time it will print the city. Why? and how can you fix that.
 
 
